@@ -1,0 +1,351 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: lightslategrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 100%;
+}
+
+ul {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 6%;
+}
+
+main {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 3%;
+}
+
+main .centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notaPrincipal {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+}
+
+.contPrincipal {
+    display: flex;
+    flex-direction: column;
+}
+
+.contPrincipal p {
+    width: 90%;
+    margin-left: 1px;
+    margin-right: 10px;
+    font-size: medium;
+    text-align: justify;
+    padding: 2%;
+}
+
+h1 {
+    margin-top: 3%;
+    color: brown;
+    text-align: left;
+    font-size: medium;
+}
+
+.contPrincipal img {
+    width: 95%;
+    height: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.sidebar {
+    display: none;
+    width: 23%;
+    background-color: darkgrey;
+    height: 60vh;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    font-size: large;
+    color: brown;
+    text-align: left;
+    padding: 5%;
+    padding-bottom: 10%;
+    font-weight: bold;
+}
+
+.notasAbajo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 30px auto;
+    gap: 10px;
+}
+
+.nota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    padding: 10px;
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: small;
+    color: brown;
+    text-align: center;
+}
+
+.nota img {
+    width: 80%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.nota p {
+    text-align: justify;
+    padding-left: 9%;
+    padding-right: 9%;
+    font-size: small;
+}
+
+.nota a {
+    align-self: flex-end;
+    justify-self: end;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 9%;
+}
+
+footer {
+    background-color: brown;
+    font-size: small;
+    color: aliceblue;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 2%;
+}
+
+@media (min-width: 768px) and (max-width: 1449px) {
+    .notaPrincipal p {
+        font-size: x-large;
+        margin-top: 3%;
+        width: 90%;
+        margin-left: 2%;
+    }
+    .notaPrincipal h1 {
+        font-size: xx-large;
+        margin-bottom: 5%;
+    }
+    .notaPrincipal img {
+        width: 92%;
+    }
+    .sidebar {
+        display: flex;
+        height: 74em;
+    }
+    main {
+        height: 180rem;
+    }
+    .notasAbajo {
+        background-color: black;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        gap: 5px;
+        height: 110em;
+    }
+    .nota p {
+        font-size: medium;
+    }
+    h2 {
+        font-size: large;
+        text-align: left;
+    }
+    .nota {
+        background-color: lightgray;
+        width: 46%;
+        height: 25rem;
+        margin: 5px auto 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .notasAbajo {
+        height: 120em;
+    }
+    .nota {
+        height: 28rem;
+    }
+    main {
+        height: 194rem;
+    }
+    li a {
+        font-size: x-large;
+        padding-top: 24px;
+    }
+    ul {
+        height: 3rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 2560px) {
+    header {
+        width: 80%;
+        margin: auto;
+    }
+    header img {
+        width: 80%;
+    }
+    .centro {
+        width: 75%;
+    }
+    .notasAbajo {
+        height: 170em;
+        width: 100%;
+        background-color: black;
+        margin: 20px 0px;
+        gap: 10px;
+    }
+    .notasAbajo h2 {
+        font-size: xx-large;
+    }
+    .notasAbajo p {
+        font-size: x-large;
+    }
+    .notasAbajo a {
+        font-size: x-large;
+        margin-right: 4%;
+    }
+    .nota {
+        height: 40rem;
+        width: 45%;
+        padding: 1%;
+    }
+    .notaPrincipal h1 {
+        font-size: 2rem;
+        margin-bottom: 3%;
+    }
+    .notaPrincipal p {
+        font-size: 1.3rem;
+        margin: 2% auto;
+    }
+    .sidebar {
+        display: none;
+        margin-left: 3%;
+        width: 130px;
+        height: 97rem;
+    }
+    main {
+        width: 64%;
+        height: 227rem;
+    }
+    li a {
+        font-size: 2rem;
+        padding-top: 8px;
+        border-style: solid;
+        border-color: gray;
+        border-width: 4px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color: darkslategray;
+        margin-left: 0px;
+    }
+    ul {
+        width: 80%;
+        height: 4rem;
+    }
+    footer {
+        width: 64%;
+    }
+}
+
+@media (min-width: 2560px) {
+    .notaPrincipal h1 {
+        font-size: 5rem;
+    }
+    .notaPrincipal p {
+        font-size: 4rem;
+    }
+    .sidebar {
+        height: 186rem;
+    }
+    main {
+        height: 498rem;
+    }
+    li a {
+        font-size: 5rem;
+        padding-top: 24px;
+        border-style: solid;
+        border-color: gray;
+        border-width: 10px;
+        padding-left: 9rem;
+        padding-right: 9rem;
+        background-color: darkslategray;
+        margin-left: 0px;
+    }
+    ul {
+        height: 9rem;
+    }
+    .notasAbajo {
+        height: 316em;
+    }
+    .nota {
+        height: 76rem;
+    }
+    .notasAbajo h2 {
+        font-size: 4rem;
+    }
+    .notasAbajo p {
+        font-size: 3rem;
+    }
+    .notasAbajo a {
+        font-size: 3rem;
+        margin-right: 4%;
+    }
+    footer {
+        height: 5rem;
+    }
+    footer p {
+        font-size: 3rem;
+    }
+}
